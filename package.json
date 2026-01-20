@@ -19,11 +19,6 @@
   ],
   "author": "Anders Tangen <anders@indx.co>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/indxSearch/IndxNodeLoader.git"
-  },
-  "homepage": "https://github.com/indxSearch/IndxNodeLoader#readme",
   "dependencies": {
     "axios": "^1.6.7",
     "chalk": "^5.3.0",
