@@ -1,0 +1,36 @@
+{
+  "name": "indx-node-loader",
+  "version": "1.0.0",
+  "description": "Node.js TypeScript application for loading and configuring datasets for IndxCloudApi",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "indx",
+    "search",
+    "cloud",
+    "loader",
+    "dataset"
+  ],
+  "author": "Anders Tangen <anders@indx.co>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.1",
+    "inquirer": "^9.2.15"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.19",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  }
+}
