@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@indxsearch/indx-types':
+        specifier: ^1.0.1
+        version: 1.0.1
       axios:
         specifier: ^1.6.7
         version: 1.13.2
@@ -201,6 +204,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@indxsearch/indx-types@1.0.1':
+    resolution: {integrity: sha512-dcamNuMflTc/2i4LABjG8HaR8Ft4CcOYGzVgwIfkNEdxDwba5hJ5IOqEpOROHtC56XM+pPQPkCv3Autw4R+ufQ==}
 
   '@inquirer/external-editor@1.0.3':
     resolution: {integrity: sha512-RWbSrDiYmO4LbejWY7ttpxczuwQyZLBUyygsA9Nsv95hpzUWwnNTVQmAq3xuh7vNwCp07UTmE5i11XAEExx4RA==}
@@ -673,6 +679,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.27.2':
     optional: true
+
+  '@indxsearch/indx-types@1.0.1': {}
 
   '@inquirer/external-editor@1.0.3(@types/node@20.19.30)':
     dependencies:

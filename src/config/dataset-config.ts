@@ -2,7 +2,16 @@
  * Dataset configuration definitions
  * Converts C# DatasetConfig.cs to TypeScript
  */
-import { Weight } from '../types/indx-search-lib.js';
+
+/**
+ * Search field weight (importance in search results)
+ * Lower number = higher priority in search ranking
+ */
+export enum Weight {
+  High = 0,   // Highest priority (e.g., title)
+  Med = 1,    // Medium priority (e.g., description)
+  Low = 2     // Lowest priority (e.g., tags)
+}
 
 export interface SearchableField {
   name: string;

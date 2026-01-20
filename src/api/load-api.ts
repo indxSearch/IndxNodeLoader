@@ -18,7 +18,7 @@ import {
   CombinedFilterProxy,
   BoostProxy,
   BoostStrength
-} from '../types/indx-search-lib.js';
+} from '@indxsearch/indx-types';
 
 const SEARCH_CONTROLLER_ROUTE = 'api';
 
@@ -720,9 +720,9 @@ export async function loadDataset(datasetName: string, config: DatasetConfig, cl
 
     if (filt1 && filt2) {
       const cf: CombinedFilterProxy = {
-        filter1: filt1,
-        filter2: filt2,
-        useAnd: true
+        a: filt1,
+        b: filt2,
+        useAndOperation: true
       };
       const combFilt = await combineFilters(config.name, cf, client);
 
@@ -824,7 +824,7 @@ export async function loadDataset(datasetName: string, config: DatasetConfig, cl
   };
 
   const res = await search(query, config.name, client);
-  if (res === null || res.records === null) {
+  if (res === null || !res.records || res.records.length === 0) {
     ConsoleHelper.writeError('Search returned no results');
     return;
   }
