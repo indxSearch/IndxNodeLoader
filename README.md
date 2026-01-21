@@ -28,11 +28,9 @@ IndxNodeLoader/
 │   │   └── load-api.ts         # Main data loading logic with API calls
 │   ├── config/
 │   │   └── dataset-config.ts   # Dataset configurations (tmdb, pokedex)
-│   ├── utils/
-│   │   ├── console-helper.ts   # Console output formatting utilities
-│   │   └── auth.ts             # Authentication helpers
-│   └── types/
-│       └── indx-search-lib.ts  # Type definitions for IndxSearchLib
+│   └── utils/
+│       ├── console-helper.ts   # Console output formatting utilities
+│       └── auth.ts             # Authentication helpers
 ├── data/                       # Dataset JSON files
 │   ├── tmdb_top10k.json
 │   └── pokedex.json
@@ -44,7 +42,6 @@ IndxNodeLoader/
 **Key Files:**
 - **src/config/dataset-config.ts** - Add new datasets here by defining searchable, filterable, facetable, and sortable fields.
 - **src/api/load-api.ts** - The main workflow with comprehensive inline comments explaining each step.
-- **src/types/indx-search-lib.ts** - TypeScript type definitions for the API (based on Swagger/OpenAPI spec).
 
 ## Included Datasets
 
