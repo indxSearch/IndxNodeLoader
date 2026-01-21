@@ -7,7 +7,7 @@ A Node.js TypeScript application for loading and configuring datasets in **IndxC
 ## Related Projects
 
 - **[IndxCloudApi](https://github.com/indxSearch/IndxCloudApi)** - The search server API that this loader connects to
-- **[indx-interface](https://github.com/indxSearch/indx-interface)** - React UI for interacting with the search server
+- **[indx-intrface](https://github.com/indxSearch/indx-intrface)** - React UI for interacting with the search server
 
 ## Features
 
